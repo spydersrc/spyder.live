@@ -219,7 +219,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const long = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
 
   const bioMessages = [
-  `${long} days since I found my passion`,
+  `It's been ${long} days since I found my passion`,
   'Just a aspiring Software developer',
 ];
 
@@ -583,3 +583,4 @@ document.addEventListener('DOMContentLoaded', () => {
   typeWriterStart();
 
 });
+
