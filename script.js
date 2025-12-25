@@ -23,8 +23,13 @@ async function rotate() {
     
     i = (i + 1) % greetings.length;
 }
-setInterval(rotate, 2500);
+setInterval(rotate, 3000);
 rotate();
-const now = new Date();
-const daysSinceEpoch = Math.floor(now.getTime() / (1000 * 60 * 60 * 24));
-document.getElementById("days-since").textContent = daysSinceEpoch;
+
+async function fetchDailyQuote() {
+    const response = await fetch('https://corsproxy.io/?https://zenquotes.io/api/today');
+    let data = await response.json();
+    document.getElementById("daily-quote").textContent = `"${data[0]['q']}" — ${data[0]['a']}`;
+    console.log(data);
+}
+fetchDailyQuote();
