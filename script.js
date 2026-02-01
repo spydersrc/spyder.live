@@ -27,7 +27,7 @@ setInterval(rotate, 3000);
 rotate();
 
 async function fetchDailyQuote() {
-    const response = await fetch('https://corsproxy.io/?https://zenquotes.io/api/today');
+    const response = await fetch('https://zenquotes.io/api/today');
     let data = await response.json();
     document.getElementById("daily-quote").textContent = `"${data[0]['q']}" — ${data[0]['a']}`;
     console.log(data);
