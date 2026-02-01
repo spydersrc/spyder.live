@@ -49,33 +49,7 @@ body {
     font-size: 16px;
     line-height: 1.6;
 }
-.quote-section {
-    text-align: center;
-    padding: 30px;
-    max-width: 700px;
-    margin: 0 auto 50px auto;
-    background: rgba(40, 40, 40, 0.6);
-    border-radius: 16px;
-    border: 1px solid rgba(176, 176, 176, 0.2);
-    backdrop-filter: blur(10px);
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-}
 
-.quote-section h2 {
-    color: #ffffff;
-    font-size: 22px;
-    margin-bottom: 15px;
-    font-weight: 600;
-}
-
-.quote-section p {
-    color: #e0e0e0;
-    font-size: 15px;
-    line-height: 1.8;
-    font-style: italic;
-}
-/* LOGO SCROLL SECTION */
-/* TECH SECTION */
 .tech-section {
     width: 100%;
     max-width: 850px;
